@@ -31,16 +31,18 @@ Question
 Solution
 
 	create a hash table "dct"
-	思維 nums[i]，每次 判斷 target減input 是否在dct中，如果是就回傳正確答案，如果不是就把input存入dct中。
+ 	Think abot the nums[u], each judgement the different, target substrat input, in dct. 
+  if true, return the answer. Or not, the input is stored in dct.
+  
 	Example 2:
 	Index 0, Input =3
-	Target -Input  = 3 => 不在dct中
+	Target -Input  = 3 => Not exist in dct.
 	dct = [3]
 	Index 1, Input =2
-	Target -Input  = 4 => 不在dct中
+	Target -Input  = 4 => Not exist in dct.
 	dct = [3, 2]
 	Index 2, Input =4
-	Target -Input  = 2 => 在dct中
+	Target -Input  = 2 => Exist in dct.
 	Return [1, index]
 	dct = [3, 2]
 
@@ -98,9 +100,9 @@ Question
 
 	1. LinkedNode 
  ![image](https://github.com/RaleighGithub/LeetcodeNote/assets/74161529/b3c9d08a-2be3-4074-bb07-3232d370a66d)
-
-	2. l1 或 l2是空的 就要回傳另一個，所以要用while loop
-	3. 用一個temp存放l1, l2 value summation，並且要檢查是否進位
+ 
+	2. If l1 or l2 is None, and return another one. All are None, and return 0. It is a condition, thus the while-loop is better than for-loop. 
+	3. A temp variable is stored l1 and l2 value, and check it whether to carry.
 	
 ```python3
 # Definition for singly-linked list.
