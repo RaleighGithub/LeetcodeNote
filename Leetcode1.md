@@ -27,6 +27,7 @@ Question
 		Only one valid answer exists.
 
 	Follow-up: Can you come up with an algorithm that is less than O(n^2) time complexity?
+ 	Follow-up: If the input array is sorted, how to do.
 
 Solution
 
@@ -59,16 +60,20 @@ class Solution:
 Runtime: 71 ms 
 Memory Usage: 17.67 MB
 
+Comment: 
 
-Time complexity O(n)
-Space Complexity: O(N)
+	1. add a return, if the input array is none.
+	2. If the target -v is not exist
 
-Brute Force
-Time Complexity: O(N^2)
-Space Complexity: O(1)
-
-More information about Leetcode #1 solution
-https://ithelp.ithome.com.tw/articles/10292023
+	Time complexity O(n)
+	Space Complexity: O(N)
+	
+	Brute Force
+	Time Complexity: O(N^2)
+	Space Complexity: O(1)
+	
+	More information about Leetcode #1 solution
+	https://ithelp.ithome.com.tw/articles/10292023
 
 
 #2.Add Two Numbers (Medium)
