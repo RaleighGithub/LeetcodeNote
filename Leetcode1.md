@@ -27,13 +27,13 @@ Question
 		Only one valid answer exists.
 
 	Follow-up: Can you come up with an algorithm that is less than O(n^2) time complexity?
- 	Follow-up: If the input array is sorted, how to do.
+ 	Follow-up: If the input array is sorted, how to do. please see leetcode #167.
 
 Solution
 
 	create a hash table "dct"
- 	Think abot the nums[u], each judgement the different, target substrat input, in dct. 
-  if true, return the answer. Or not, the input is stored in dct.
+ 	Think about the nums[u], each judgement the different, it is target substrat input, in dct. 
+  	if true, return the answer. Or not, the input is stored in dct.
   
 	Example 2:
 	Index 0, Input =3
@@ -62,7 +62,7 @@ Memory Usage: 17.67 MB
 
 Comment: 
 
-	1. add a return, if the input array is none.
+	1. add a return, if the input array is none. => If is no need that the constain is that 2 <= nums.length <= 10^4.
 	2. If the target -v is not exist
 
 	Time complexity O(n)
